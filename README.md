@@ -64,7 +64,7 @@ Returns the details of all restaurants.
 GET https://foodfinder.com/restaurants
 ```
 
-#### Example cURL request:  
+#### Example `curl` request:  
 ```
 curl -I -X GET https://foodfinder.com/restaurants
 ```
@@ -116,7 +116,7 @@ GET https://foodfinder.com/restaurants/{id}
 | ----------- |-------------------------------------------------------------|
 | `id`	      | The ID value for the Restaurant object to search for. |
 
-#### Example cURL request:  
+#### Example `curl` request:  
 The following is an example request where `id` is "1".
 ```
 curl -I -X GET https://foodfinder.com/restaurants/1
@@ -187,7 +187,7 @@ GET https://foodfinder.com/restaurants?rating={rating}
 | `price`             | Optional    | Integer   | The price range of the restaurant as a number from 1 to 4. |
 | `rating`            | Optional    | Integer   | The average rating of the restaurant as a number from 1 to 5. |
 
-#### Example cURL request:  
+#### Example `curl` request:  
 The following is an example request where `restaurant_name` is "Cream".
 ```
 curl -I -X GET https://foodfinder.com/restaurants?restaurant_name=Cream
@@ -250,7 +250,7 @@ The values for the following fields can be defined when creating a new Restauran
 | `price`	          | Integer	    | The price range of the restaurant as a number from 1 to 4. |
 | `rating`	        | Integer	    | The average rating of the restaurant as a number from 1 to 5. |
 
-#### Example cURL request:  
+#### Example `curl` request:  
 
 ```
 curl -I -X POST -H 'Content-Type: application/json'
@@ -318,7 +318,7 @@ The values for the following fields can be changed when updating a Restaurant ob
 | `price`	          | Integer	    | The price range of the restaurant as a number from 1 to 4. |
 | `rating`	        | Integer	    | The average rating of the restaurant as a number from 1 to 5. |
 
-#### Example cURL request:  
+#### Example `curl` request:  
 The following is an example request where `id` is "255" and the updated `price` is "2-5".
 
 ```
@@ -372,7 +372,7 @@ DELETE https://foodfinder.com/restaurants/{id}
 | ----------- |-------------------------------------------------------------|
 | `id`	      | The ID value for the Restaurant object to be deleted. |
 
-#### Example cURL request:  
+#### Example `curl` request:  
 The following is an example request where `id` is "225".
 
 ```
